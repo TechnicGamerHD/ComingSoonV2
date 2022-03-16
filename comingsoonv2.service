@@ -1,0 +1,19 @@
+#Coming Soon Service File
+#Read the Read.Md for more Information
+
+[Unit]
+Description=Coming Soon Side Deamon
+
+Wants=network.target
+After=syslog.target network-online.target
+
+[Service]
+Type=simple
+ExecStart=/home/ComingSoonV2/main
+WorkingDirectory=/home/ComingSoonV2/
+Restart=on-failure
+RestartSec=10
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target

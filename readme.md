@@ -1,7 +1,8 @@
 # ComingSoon
 
 Install on Linux with:
-git clone  
+apt install -y git
+git clone https://github.com/TechnicGamerHD/ComingSoonV2.git
 
 Create Service File in /etc/systemd/system
 
